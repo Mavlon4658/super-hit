@@ -180,8 +180,23 @@ button {
   opacity: 0.8 !important;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.footer__container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 14px;
+  color: white;
+}
+
 @media (max-width: 1256px) {
-  .header__container {
+  .header__container, .footer__container {
     max-width: calc(100% - 40px);
   }
 }
@@ -199,7 +214,7 @@ button {
 }
 @media (max-width: 768px) {
   .auth {
-    padding: 40px 0;
+    padding: 40px 0 80px;
   }
   .auth__form {
     max-width: 360px;
@@ -225,5 +240,13 @@ button {
   }
   .auth__form_bg img {
     min-width: 320px;
+  }
+  .footer__container {
+    color: #212529;
+  }
+}
+@media (max-width: 420px) and (max-height: 875px) {
+  .footer {
+    position: static;
   }
 }/*# sourceMappingURL=style.css.map */

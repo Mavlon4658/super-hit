@@ -148,4 +148,20 @@ button {
 }
 // Auth end
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &__container {
+        max-width: 1216px;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-size: 14px;
+        color: white;
+    }
+}
+
 @import './responsive';
