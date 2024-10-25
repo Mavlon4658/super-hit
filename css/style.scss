@@ -1,0 +1,151 @@
+@import './normalize';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background: #212529;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.btn-main {
+    background: #157BFC;
+    height: 44px;
+    font-size: 16px;
+}
+
+.header {
+    &__container {
+        max-width: 1216px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+
+// Auth
+.auth {
+    padding: 130px 0;
+
+    h3 {
+        font-size: 24px;
+    }
+
+    &__form {
+        max-width: 804px;
+        border-radius: 20px;
+        padding: 20px 50px;
+
+        &.login-form {
+            padding: 40px 50px;
+        }
+
+        &_content {
+            width: 320px;
+            gap: 20px;
+
+            .form-group {
+                gap: 12px;
+            }
+
+            .form-inp.error {
+                input {
+                    border: 1px solid #F40404;
+                }
+
+                .error-text {
+                    display: block;
+                }
+            }
+
+            input {
+                font-size: 16px;
+                margin-top: 8px;
+                height: 42px;
+                font-size: 16px;
+                padding: 0 12px;
+            }
+
+            .form-control {
+                border: 1px solid #B1B1B1;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: #212529;
+                }
+            }
+
+            .error-text {
+                display: none;
+                color: #F40404;
+                font-size: 14px;
+                margin-top: 4px;
+                line-height: 16px;
+            }
+
+            label {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            a {
+                font-size: 16px;
+                color: #157BFC;
+                line-height: 19px;
+            }
+
+            .link-wrap {
+                gap: 10px;
+            }
+        }
+
+        &_bg {
+            min-height: 348px;
+
+            h5 {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+            }
+        }
+    }
+
+    &-modal {
+        .modal-dialog {
+            max-width: 320px;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        .modal-content {
+            padding: 10px 20px 20px;
+
+            &__in {
+                gap: 10px;
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                p  {
+                    font-size: 16px;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+.modal-backdrop.show {
+    opacity: .8 !important;
+}
+// Auth end
+
+@import './responsive';
